@@ -1,0 +1,2 @@
+1. recuperer le noeud qui contient la liste des annonces
+2. pour un noeud recuperer le prix ainsi que le lien
