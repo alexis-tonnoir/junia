@@ -1,0 +1,9 @@
+Install nodejs
+https://github.com/nodesource/distributions/blob/master/README.md#deb
+
+test node is ok
+which node
+node --version
+
+run your javascript
+node test_node.js

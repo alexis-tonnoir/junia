@@ -1,0 +1,34 @@
+1 Ordonnez tout ça en fonctions
+2 renvoyez une liste de structure avec le prix et le lien
+
+function getRootElement() {
+  // return the noeud containing the list
+}
+
+function getFlatNodeInfo(flatNode) {
+  // for a specific node of 1 flat return a node containing the information
+}
+
+function getPriceNode(flatNodeInfo) {
+  // for a specific node of 1 flat information return a node containing price
+}
+
+function getPrice(priceNode) {
+  // for a specific node of 1 price information return the price as integer
+}
+
+function getPriceDirectly(flatNode) {
+  // for a specific node of 1 flat return directly the price
+}
+
+function getLink(flatNode) {
+  // for a specific node of 1 flat return the link
+}
+
+function getPriceAndLink(flatNode) {
+  // return the price and link in a structured data
+}
+
+function getPriceAndLinkList() {
+  // do the whole job and return a list of structured price and link
+}
