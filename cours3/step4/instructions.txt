@@ -1,0 +1,2 @@
+2. changer la façon de traiter la requête pour accepter une route en mode post avec la route 'leboncoin_json'
+  defaulter les autres

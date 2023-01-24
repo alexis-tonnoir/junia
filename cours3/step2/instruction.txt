@@ -1,0 +1,2 @@
+1. créer un fichier js avec un servet basic (check http.createServer)
+il log son initialisation, log les request method et url et répond 'ok'

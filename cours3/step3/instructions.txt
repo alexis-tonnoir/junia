@@ -1,0 +1,6 @@
+modifier la classe GenericRequestPoster pour envoyer un json a notre server
+route : leboncoin_json
+data : {
+  page: ...
+  data: ...
+}
