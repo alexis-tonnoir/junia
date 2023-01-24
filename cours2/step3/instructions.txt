@@ -1,3 +1,3 @@
-1. trouver l'api qui est requêtée pour avoir les résultats de recherche
-2. reproduire la requête a l'aide de XMLHttpRequest
-3. lancer le server en local et inclure ce script dans la page
+1. lancer le server en local et inclure ce script dans la page
+2. trouver l'api qui est requêtée pour avoir les résultats de recherche
+3. reproduire la requête a l'aide de XMLHttpRequest
