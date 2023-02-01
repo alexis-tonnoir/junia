@@ -1,0 +1,2 @@
+1. initialiser npm
+2. installer la lib fs

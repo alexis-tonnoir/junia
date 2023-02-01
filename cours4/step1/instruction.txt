@@ -1,0 +1,2 @@
+1. reprendre le serveur du dernier cours
+2. traiter la response pour la sauver a la suite d'un fichier

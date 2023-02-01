@@ -1,7 +1,7 @@
 1. créer un ficher et sa classe associée 'generic_request_poster'
   le constructeur prend en param une url
-  as une fonction processRequest avec un param dataraw et page qui va envoyer la requête vu au tp précédent (la page ne sert qu'au logging)
-  as une fonction processResponse avec la page en question, la reponse et log les deux
+  as une fonction processRequest avec un param dataraw qui va envoyer la requête vu au tp précédent
+  as une fonction processResponse avec la reponse et log les deux
 
 2. créer un fichier et sa classe associée 'leboncoin_request_poster'
   herite de la classe précédente
