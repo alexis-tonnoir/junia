@@ -1,2 +1,2 @@
-2. changer la façon de traiter la requête pour accepter une route en mode post avec la route 'leboncoin_json' et faire un log
+2. changer la façon de traiter la requête pour accepter une route en mode post avec l'url 'leboncoin_json' et faire un log
   defaulter les autres avec un autre log

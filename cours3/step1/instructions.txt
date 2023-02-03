@@ -11,5 +11,4 @@
 3. créer un fichier et sa classe associée 'leboncoin_appartement_request_poster'
   herite de la classe précédente
   constructeur sans param
-  as une fonction processRequest avec un param page pour aller recuperer la page x
 
