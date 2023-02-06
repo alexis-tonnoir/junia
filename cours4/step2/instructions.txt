@@ -1,0 +1,3 @@
+1. deporter les fonction d'ecriture du ficher dans un fichier separé : leboncoin_data_service.js
+2. les utiliser dans le server
+3. ajouter une fonction pour lire le fichier et le loger dans une route GET
