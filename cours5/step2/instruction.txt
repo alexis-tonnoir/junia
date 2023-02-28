@@ -1,0 +1,5 @@
+1. reprendre le service du cours précédent. Dans le constructeur initialiser la connection a la base
+2. remplacer la fonction read() pour log la reponse
+3. remplacer la fonction read() pour log la reponse et renvoyer un json
+4. créer une fonction insertOrUpdate(annonce). cf :
+INSERT INTO table (fields) VALUES(...) ON DUPLICATE KEY UPDATE field1=..., field2=...

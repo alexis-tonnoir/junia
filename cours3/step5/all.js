@@ -9,7 +9,7 @@ class GenericRequestPoster {
     let myApiRequester = new XMLHttpRequest();
     myApiRequester.open("POST", myApiUrl, true);
     myApiRequester.setRequestHeader("Content-type", "application/json");
-    myApiRequester.send(JSON.stringify(responseText));
+    myApiRequester.send(responseText);
   }
 
   processRequest(dataraw, page) {
