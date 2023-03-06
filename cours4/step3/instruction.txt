@@ -1,4 +1,4 @@
 dans le module leboncoin_data_service.js se créer une classe servive et exporter juste le getInstance.
 La classe doit avoir un attribut avec le nom du fichier, et un attribut data avec une map qui servira a avoir la data (les annonces)
 le service doit avoir des fonction vide :
-toFile, FromFile, appendTofile, read
+toFile, FromFile, appendToData, read

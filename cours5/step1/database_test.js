@@ -17,3 +17,5 @@ con.query('SELECT * FROM annonces', (err, result) => {
   if(err) throw err;
   console.log(result);
 });
+
+nest new nestjs-project

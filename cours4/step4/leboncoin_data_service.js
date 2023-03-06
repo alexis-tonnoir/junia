@@ -14,28 +14,40 @@ class LeboncoinDataService {
     if (LeboncoinDataService._intance != null) {
       throw new Error("New instance cannot be created!!");
     }
+    console.log('creating  service');
     this.leboncoinData = {};
-    this.fileName = 'leboncoin_data.json'
+    this._fileName = 'leboncoin_data.json'
+    this.fromFile();
   }
 
   fromFile() {
     // read file and save data into leboncoinData
-    console.log('calling fromFile')
+    console.log('calling fromFile');
+    if (fs.existsSync(this._fileName)) {
+      const data = fs.readFileSync(this._fileName);
+      this.leboncoinData = JSON.parse(data);
+    }
+    console.log('data is', this.leboncoinData.length);
   }
 
   appendToData(annonces) {
     // add annones to leboncoinData
-    console.log('calling appendToFile')
+    console.log('calling appendToData with', annonces.total);
+    annonces.ads.forEach(element => {
+      this.leboncoinData[element.list_id] = element
+    });
   }
 
   toFile() {
     // write leboncoinData into file
-    console.log('calling toFile')
+    console.log('calling toFile with', this.leboncoinData);
+    fs.writeFileSync(this._fileName, JSON.stringify(this.leboncoinData));
   }
 
   read() {
     // simply display leboncoinData
-    console.log('calling read')
+    console.log('reading', this.leboncoinData.length);
+    return JSON.stringify(this.leboncoinData);
   }
 }
 
