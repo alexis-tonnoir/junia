@@ -1,5 +1,6 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
+import { StatusesService } from 'src/statuses/statuses.service';
 import { Repository } from 'typeorm';
 import { Annonce } from './annonce.entity';
 import { CreateAnnonceDto } from './dto/create-annonce.dto';
@@ -9,6 +10,7 @@ export class AnnoncesService {
   constructor(
     @InjectRepository(Annonce)
     private annoncesRepository: Repository<Annonce>,
+    private statusesService: StatusesService,
   ) {}
 
   async getAll() {
@@ -25,7 +27,11 @@ export class AnnoncesService {
     return res;
   }
 
-  async createAnnonce(id: string, title: string, price: number): Promise<Annonce> {
+  async createAnnonce(
+    id: string,
+    title: string,
+    price: number,
+  ): Promise<Annonce> {
     const annonce = new Annonce();
     annonce.id = id;
     annonce.title = title;
@@ -36,12 +42,14 @@ export class AnnoncesService {
   }
 
   async createAnnonceDto(createAnnonceDto: CreateAnnonceDto): Promise<Annonce> {
-    const { id, title, price } = createAnnonceDto;
+    const { id, title, price, statusId } = createAnnonceDto;
 
     const annonce = new Annonce();
     annonce.id = id;
     annonce.title = title;
     annonce.price = price;
+
+    await this.statusesService.getById(statusId).then((status) => annonce.status = status);
     await annonce.save();
 
     return annonce;

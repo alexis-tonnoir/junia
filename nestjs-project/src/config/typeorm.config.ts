@@ -1,5 +1,7 @@
 import { TypeOrmModuleOptions } from '@nestjs/typeorm';
 import { Annonce } from 'src/annonces/annonce.entity';
+import { Picture } from 'src/pictures/picture.entity';
+import { Status } from 'src/statuses/status.entity';
 
 export const typeOrmConfig: TypeOrmModuleOptions = {
   type: 'mysql',
@@ -8,5 +10,6 @@ export const typeOrmConfig: TypeOrmModuleOptions = {
   username: 'junia_user',
   password: 'junia_user',
   database: 'junia',
-  entities: [Annonce],
+  entities: [Annonce, Picture, Status],
+  synchronize: true,
 };

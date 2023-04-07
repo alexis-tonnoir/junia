@@ -1,4 +1,12 @@
-import { Body, Controller, Delete, Get, Param, Patch, Post } from '@nestjs/common';
+import {
+  Body,
+  Controller,
+  Delete,
+  Get,
+  Param,
+  Patch,
+  Post,
+} from '@nestjs/common';
 import { Annonce } from './annonce.model';
 import { AnnoncesService } from './annonces.service';
 import { CreateAnnonceDto } from './dto/create-annonce.dto';
